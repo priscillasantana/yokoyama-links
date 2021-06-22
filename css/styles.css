@@ -1,0 +1,104 @@
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  padding: 30px;
+  background-color: #040404;
+
+}
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+@keyframes changeColor {
+  0% {
+    color: #13C3F9;
+  }
+
+  25% {
+    color: #3c0fc4;
+  }
+
+  50% {
+    color: #037396;
+  }
+
+  100% {
+    color: #7C5CDF;
+  }
+}
+
+header {
+  padding-top:40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  animation: changeColor 5s infinite;
+}
+
+header h1 {
+  color: white;
+}
+
+section article {
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+section article span {
+  display: flex;
+  flex-direction: row;
+
+}
+
+section article div {
+  background-image: url(../assets/fundo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 13px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: all .7s ease-in-out;
+}
+
+section article h3 {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  color: black;
+  margin-left: 20px;
+}
+
+section article div .iconify {
+  font-size: 26px;
+
+  color: black;
+}
+
+section article div:hover {
+  background-image: url(../assets/fundo2.svg);
+  color: black;
+}
